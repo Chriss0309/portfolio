@@ -90,6 +90,11 @@ If you have any environment variables, add them in the Vercel dashboard:
 - Ensure all dependencies are in `package.json`
 - Verify TypeScript compilation passes locally
 
+### Common Vercel Build Issues
+- **"vite: command not found"**: Make sure Vite is in `dependencies`, not `devDependencies`
+- **Build timeout**: Check for large dependencies or slow build processes
+- **Missing dependencies**: Ensure all build-time dependencies are in `dependencies`
+
 ### Performance Issues
 - The `vercel.json` file includes optimizations for:
   - Asset caching
