@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import {motion} from "motion/react"
 import './App.css'
 import UnicornScene from 'unicornstudio-react'
