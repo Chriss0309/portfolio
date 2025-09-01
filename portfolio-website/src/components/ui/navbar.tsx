@@ -88,16 +88,15 @@ export function Navbar({ className = '' }: NavbarProps) {
               <motion.button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                                 className={`relative px-3 sm:px-4 py-2 rounded-xl font-bold text-sm sm:text-base transition-all duration-300 ${
-                   activeSection === item.id
-                     ? 'text-black font-bold bg-black/30 backdrop-blur-sm'
-                     : 'text-black font-bold hover:text-white hover:bg-black/20'
-                 }`}
-                                 whileHover={{ 
-                   scale: 1.05,
-                   backgroundColor: 'rgba(0, 0, 0, 0.2)'
-                 }}
-                whileTap={{ scale: 0.95 }}
+                className={`relative px-3 sm:px-4 py-2 rounded-lg font-medium text-sm sm:text-base transition-all duration-200 ${
+                  activeSection === item.id
+                    ? 'text-white bg-white/20'
+                    : 'text-white/80 hover:text-white hover:bg-white/10'
+                }`}
+                whileHover={{ 
+                  scale: 1.02,
+                }}
+                whileTap={{ scale: 0.98 }}
                 transition={{ 
                   type: "spring", 
                   stiffness: 400, 
