@@ -1,6 +1,4 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "portfolio-website/dist",
-  "installCommand": "npm install",
-  "rootDirectory": "portfolio-website"
+  "buildCommand": "cd portfolio-website && npm install && npm run build",
+  "outputDirectory": "portfolio-website/dist"
 }
