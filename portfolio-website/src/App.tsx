@@ -6,6 +6,8 @@ import { ArcTimeline } from "@/components/magicui/arc-timeline";
 import { CodeBlock } from './components/ui/code-block'
 import { Navbar } from './components/ui/navbar'
 import meImage from './assets/mee.jpeg'
+import Silk from './components/Silk'
+import GradualBlur from './components/GradualBlur'
 
 function App() {
   return (
@@ -13,12 +15,13 @@ function App() {
       <Navbar />
       {/* First section - Hero with UnicornScene */}
       <div id="home" className="relative h-screen">
-        <UnicornScene 
-          projectId="mhLlYCyCooqdwsHcsEqW" 
-          width="100%" 
-          height="100%" 
-          className="background-scene"
-        />
+      <Silk
+        speed={5}
+        scale={1}
+        color="#7B7481"
+        noiseIntensity={5.5}
+        rotation={0}
+      />
         <motion.div 
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-full px-4 sm:px-6 lg:px-8"
           initial={{ opacity: 0, y: 50 }}
@@ -101,7 +104,16 @@ function App() {
         </motion.div>
         
         {/* Smooth blur transition effect at bottom */}
-        <div className="absolute bottom-0 left-0 right-0 h-18 bg-gradient-to-t from-gray-900 via-gray-900/60 via-gray-900/30 via-gray-900/10 to-transparent backdrop-blur-lg z-20"></div>
+        <GradualBlur
+          target="parent"
+          position="bottom"
+          height="6rem"
+          strength={4}
+          divCount={5}
+          curve="bezier"
+          exponential={true}
+          opacity={1}
+        />
       </div>
       
       {/* Next section with Terminal */}

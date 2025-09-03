@@ -11,20 +11,23 @@
     "postinstall": "echo 'Dependencies installed successfully'"
   },
   "dependencies": {
+    "@react-three/fiber": "^9.3.0",
     "@tabler/icons-react": "^3.34.1",
     "@tailwindcss/vite": "^4.1.12",
+    "@vitejs/plugin-react-swc": "^4.0.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.542.0",
+    "mathjs": "^14.6.0",
     "motion": "^12.23.12",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-syntax-highlighter": "^15.6.6",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.1.12",
+    "three": "^0.179.1",
     "unicornstudio-react": "^1.4.29-1",
-    "vite": "^7.1.2",
-    "@vitejs/plugin-react-swc": "^4.0.0"
+    "vite": "^7.1.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
@@ -32,6 +35,7 @@
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "@types/react-syntax-highlighter": "^15.5.13",
+    "@types/three": "^0.179.0",
     "eslint": "^9.33.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
